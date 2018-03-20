@@ -102,7 +102,7 @@ public  class ToolsFragment extends Fragment{
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent=new Intent(getActivity(),NewsActivity.class);
-                intent.putExtra("type","uri");
+                intent.putExtra("type","url");
                 intent.putExtra("url",mImages.get(position).getUrl());
                 startActivity(intent);
                // WebView webView=new WebView(getActivity());
